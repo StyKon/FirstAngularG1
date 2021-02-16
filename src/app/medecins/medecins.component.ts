@@ -19,5 +19,10 @@ export class MedecinsComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  onAdd():void {
+  this.Reclamation_medecin.date = new Date ;
+  this.Agenda.push({date : this.Reclamation_medecin.date , message : this.Reclamation_medecin.message}) ;
+  this.Reclamation_medecin.message ="";
+  }
 
 }
