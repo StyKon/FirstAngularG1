@@ -8,6 +8,7 @@ import { C1Component } from './c2/c1/c1.component';
 import { MedecinsComponent } from './medecins/medecins.component';
 import { PatientsComponent } from './patients/patients.component';
 import { DiabeteComponent } from './medecins/diabete/diabete.component';
+import { PatientService } from './patients/patient.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { DiabeteComponent } from './medecins/diabete/diabete.component';
     FormsModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [PatientService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
