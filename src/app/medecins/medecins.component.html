@@ -1,1 +1,19 @@
 <p>medecins works!</p>
+<div>
+  <ul>
+    <li> Nom : {{info_medecin.nom}}</li>
+    <li> Prenom : {{info_medecin.prenom}}</li>
+    <li> Telephone : {{info_medecin.telephone}}</li>
+  </ul>
+</div>
+<li *ngFor= "let element of Agenda">
+  {{element.date}} : {{element.message}}
+</li>
+<input type="text" name="message">
+<div>
+  <div class="form-group">
+<label class="custom-control-label">Message</label>
+<input type="text" [(ngModel)]="Reclamation_medecin.message">
+
+  </div>
+</div>
